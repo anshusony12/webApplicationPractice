@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <welcome-file-list>
+        <welcome-file>home.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>myform</servlet-name>
+        <servlet-class>com.practice.myForm</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>success</servlet-name>
+        <servlet-class>com.practice.success</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>s1</servlet-name>
+        <servlet-class>com.attribute.s1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>com.attribute.s2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myform</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>success</servlet-name>
+        <url-pattern>/success</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s1</servlet-name>
+        <url-pattern>/s1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
